@@ -1,0 +1,43 @@
+Steps to Perform in VS Code
+1.	Install Docker Desktop from:
+Docker Desktop 
+2.	Open Docker Desktop 
+3.	Open VS Code 
+4.	Open Terminal 
+5.	Run commands one by one 
+6.	Container environment will be created 
+
+1. Check Docker Installation
+docker --version
+________________________________________
+2. Pull Docker Image
+docker pull ubuntu
+OR for NVIDIA Docker:
+docker pull nvidia/cuda:12.2.0-base-ubuntu22.04
+________________________________________
+3. Check Downloaded Images
+docker images
+________________________________________
+4. Create and Run Container
+docker run -it ubuntu
+OR NVIDIA Container:
+docker run --gpus all -it nvidia/cuda:12.2.0-base-ubuntu22.04
+________________________________________
+5. Check Running Containers
+docker ps
+________________________________________
+6. Check All Containers
+docker ps -a
+________________________________________
+7. Stop Container
+docker stop container_id
+________________________________________
+8. Start Container
+docker start container_id
+________________________________________
+9. Remove Container
+docker rm container_id
+________________________________________
+10. Remove Docker Image
+docker rmi ubuntu
+
